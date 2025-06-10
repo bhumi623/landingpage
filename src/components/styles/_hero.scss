@@ -1,0 +1,103 @@
+@import 'variables';
+
+.hero {
+  background-color: #043873;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: white;
+  min-height: 100vh;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    gap: 0.5rem;
+    margin-top:35px;
+   @media (min-width: 769px) and (max-width: 1000px) {
+    margin-top:160px;
+    gap:2rem;
+}
+
+    @media (max-width: 768px ) {
+      flex-direction: column;
+      text-align: center;
+      gap: 4rem;
+    }
+  }
+
+  &__text {
+    max-width: 600px;
+    margin-left: 110px;
+    @media (min-width: 769px) and (max-width: 1000px) {
+     margin-left: 0;
+}
+
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #d1d5db;
+      margin-bottom: 2rem;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+    }
+
+    .hero__cta {
+      background-color: #5885db;
+      color: white;
+      font-weight: 500;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+
+      @media (max-width: 768px) {
+        width: 90%;
+        max-width: 300px;
+      }
+    }
+  }
+
+  &__placeholder {
+    width: 620px;
+    height: 370px;
+    background-color: #cfdcf5;
+    margin-right: 18px;
+    @media (min-width: 769px) and (max-width: 1000px) {
+
+    margin-right:15px;
+    
+}
+
+
+    @media (max-width: 768px) {
+      width: 90%;
+      height: 250px;
+      margin-right: 0;
+    }
+  }
+}
